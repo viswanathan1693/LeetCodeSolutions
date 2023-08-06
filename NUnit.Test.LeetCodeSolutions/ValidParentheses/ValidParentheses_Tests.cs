@@ -11,11 +11,11 @@ namespace NUnit.Test.LeetCodeSolutions
     public class ValidParentheses_Tests
     {
         private string _inputString;
-        private bool _validParentheses;
-        public ValidParentheses_Tests(string inputString, bool validParentheses)
+        private bool _valid;
+        public ValidParentheses_Tests(string inputString, bool valid)
         {
             _inputString = inputString;
-            _validParentheses = validParentheses;
+            _valid = valid;
 
         }
 
@@ -29,7 +29,7 @@ namespace NUnit.Test.LeetCodeSolutions
         {
             var result = ValidParentheses.IsValid(_inputString);
 
-            Assert.That(result, Is.EqualTo(_validParentheses));
+            Assert.That(result, Is.EqualTo(_valid));
         }
 
     }
